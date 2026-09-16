@@ -1,56 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hybrid Energy Harvesting Backup Power System | Jagat Raj Joshi</title>
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Hybrid Energy Harvesting Backup Power — engineering case study by Jagat Raj Joshi.">
+  <title>Hybrid Energy Harvesting Backup Power | Jagat Raj Joshi</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
 <nav class="nav">
   <div class="container nav-inner">
-    <a class="brand" href="/index.html">Jagat Raj Joshi</a>
+    <a class="brand" href="/"><span>J</span>agat Raj Joshi</a>
     <div class="nav-links">
-      <a href="/index.html#projects">Projects</a>
-      <a href="/index.html#experience">Experience</a>
-      <a href="/index.html#skills">Skills</a>
-      <a href="/index.html#publication">Publication</a>
-      <a href="/index.html#contact">Contact</a>
+      <a href="/#projects">Projects</a>
+      <a href="/#experience">Experience</a>
+      <a href="/#skills">Skills</a>
+      <a href="/#research">Research</a>
+      <a href="/#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle color theme">☀</button>
+      <button class="icon-btn menu-btn" data-menu aria-label="Open navigation menu">☰</button>
     </div>
   </div>
 </nav>
 
+<main id="main">
 <header class="project-hero">
-  <div class="container">
-    <div class="eyebrow">Master’s Thesis · UNC Charlotte</div>
-    <h1>Hybrid Energy Harvesting Backup Power System</h1>
-    <p class="lead">Maintain CAN communication during a power outage using harvested energy from multiple low-power sources.</p>
-    <div class="cta-row">
-      <a class="btn" href="/index.html#projects">← All Projects</a>
-    </div>
+  <div class="container reveal">
+    <div class="eyebrow">01 · Master’s Thesis · Energy Systems · Experimental Validation</div>
+    <h1>Hybrid Energy Harvesting Backup Power</h1>
+    <p class="lead">A maintenance-free concept that accumulates low ambient energy over time and releases it only when sufficient stored energy is available for communication.</p>
+    <div class="tag-row"><span class="tag">Energy Harvesting</span><span class="tag">CAN</span><span class="tag">Lab Testing</span><span class="tag">Power Electronics</span></div>
+    <div class="cta-row"><a class="btn" href="/#projects">← All projects</a></div>
   </div>
 </header>
-<main class="project-body">
-  <div class="container">
-    <div class="placeholder">
-      Add your strongest CAD render, prototype photo, test setup, thermal plot, or result figure here.
-    </div>
-    <h2>The Problem</h2><p>Critical low-power communication hardware can lose functionality during outages, while ambient energy sources are individually intermittent and low-output.</p>
-<h2>Design Intent</h2><p>Create a hybrid architecture combining thermoelectric, solar, and vibration harvesting with energy storage and regulated power delivery.</p>
-<h2>What I Did</h2><p>Integrated source characterization, power-management electronics, storage behavior, microcontroller loads, and CAN communication into a working experimental setup. Built test procedures, collected charge/discharge data, and troubleshot startup, wiring, transient-load, and repeatability issues.</p>
-<h2>Key Results</h2><p>Demonstrated hybrid storage charging from approximately 1.0 V to 3.2 V and evaluated the energy required for CAN events. The work established a practical backup-power architecture rather than relying on a single harvesting source.</p>
-<h2>Tools</h2><p>MATLAB/Simulink, LabVIEW, CAN, power electronics, instrumentation, experimental testing</p>
-    <div class="callout">
-      <strong>Portfolio note:</strong> Replace placeholders with non-confidential visuals only. Avoid proprietary dimensions, customer information, or internal company data.
-    </div>
+
+<section class="project-shell">
+  <div class="container case-layout">
+    <aside class="case-nav">
+      <div class="eyebrow">Case study</div>
+      <a href="#overview">Overview</a>
+      <a href="#challenge">Challenge</a>
+      <a href="#ownership">My ownership</a>
+      <a href="#validation">Build / validation</a>
+      <a href="#result">Result</a>
+      <a href="#tools">Tools</a>
+    </aside>
+
+    <article>
+      <section class="case-section reveal" id="overview">
+        <div class="eyebrow">At a glance</div>
+        <h2>Project overview</h2>
+        <p>Battery-less, event-driven backup architecture harvesting thermal, vibration, and solar energy for reliable CAN communication.</p>
+        <div class="metric-grid"><div class="metric"><strong>3 sources</strong><span>TEG + vibration + solar</span></div><div class="metric"><strong>1 F / 5.5 V</strong><span>Supercapacitor storage</span></div><div class="metric"><strong>~1.05 mJ</strong><span>Energy per CAN event</span></div><div class="metric"><strong>30–40 min</strong><span>Recharge with solar input</span></div></div>
+        <div class="visual-panel"><div><strong>Visual gallery slot</strong>Use your thesis system architecture, integrated test-bench photo, and representative long-duration charge/discharge result.<br><small>Keep only non-confidential visuals and material you have permission to publish.</small></div></div>
+      </section>
+
+      <section class="case-section reveal" id="challenge">
+        <div class="eyebrow">Engineering problem</div>
+        <h2>Challenge & design intent</h2>
+        <div class="triad">
+          <div class="card"><h3>Problem</h3><p>Low-power ambient sources could not directly support the short, higher-power burst required for a reliable CAN status message during an outage or trigger event.</p></div>
+          <div class="card"><h3>Design intent</h3><p>Create a modular backup architecture that harvests thermal, vibration, and solar energy, conditions each source, stores energy, and activates the communication load only above a safe threshold.</p></div>
+          <div class="card"><h3>Constraints</h3><ul><li>Very low harvested power</li><li>Different voltage/power behavior across three sources</li><li>Brownout risk</li><li>Small energy budget</li><li>Need for threshold-based activation</li></ul></div>
+        </div>
+      </section>
+
+      <section class="case-section reveal" id="ownership">
+        <div class="eyebrow">Role</div>
+        <h2>What I owned</h2>
+        <div class="card"><ul><li>Defined the three-source architecture using TEG, piezoelectric, and photovoltaic inputs.</li><li>Integrated source-specific power conditioning paths.</li><li>Selected and evaluated supercapacitor storage and ATtiny MCU + CAN load behavior.</li><li>Used threshold/UVLO logic so the load operated only when sufficient energy was stored.</li><li>Built the test setup, captured source behavior, and evaluated charge-discharge-recovery cycles.</li></ul></div>
+        <details>
+          <summary>Why this project matters</summary>
+          <p>This project demonstrates my preferred engineering workflow: connect system requirements to mechanical design, move the design into real hardware, observe actual behavior, and use evidence from fabrication or testing to guide the next iteration.</p>
+        </details>
+      </section>
+
+      <section class="case-section reveal" id="validation">
+        <div class="eyebrow">Execution</div>
+        <h2>Design → build → test → iterate</h2>
+        <div class="process">
+          <div class="card"><b>01</b><h3>Define</h3><p>Understand the system boundary, interfaces, constraints, and performance need.</p></div>
+          <div class="card"><b>02</b><h3>Design</h3><p>Translate requirements into CAD, analysis, packaging, architecture, or test planning.</p></div>
+          <div class="card"><b>03</b><h3>Build / test</h3><p>Support fabrication, assembly, instrumentation, fit checks, or experimental validation.</p></div>
+          <div class="card"><b>04</b><h3>Improve</h3><p>Use prototype, manufacturing, or test evidence to revise the engineering solution.</p></div>
+        </div>
+      </section>
+
+      <section class="case-section reveal" id="result">
+        <div class="eyebrow">Outcome</div>
+        <h2>Result</h2>
+        <div class="callout">Testing confirmed repeatable charge-discharge-recovery behavior. Solar dominated charging when available, the TEG provided persistent baseline harvesting, and reliable CAN operation depended on stored energy remaining above the activation threshold.</div>
+      </section>
+
+      <section class="case-section reveal" id="tools">
+        <div class="eyebrow">Technical stack</div>
+        <h2>Tools & methods</h2>
+        <p>ATE1-71 TEG · Volture V22B · DC2042A/LTC3109 · ADP5090-2 · Supercapacitor · ATtiny MCU · CAN · MATLAB · Python · Lab instrumentation</p>
+        <p style="margin-top:28px"><a class="btn" href="/#projects">Explore another project →</a></p>
+      </section>
+    </article>
   </div>
+</section>
 </main>
 
 <footer class="footer">
-  <div class="container">
+  <div class="container footer-row">
     <div>Jagat Raj Joshi · Mechanical & Electromechanical Engineer</div>
-    <div class="small">© <span id="year"></span> Jagat Raj Joshi</div>
+    <div>© <span id="year"></span> · Charlotte, NC</div>
   </div>
 </footer>
 <script src="/assets/js/main.js"></script>

@@ -1,36 +1,51 @@
 # Jagat Raj Joshi — Engineering Portfolio
 
-A multi-page GitHub Pages portfolio for mechanical, electromechanical, product-development, thermal, testing, and energy-system work.
+Complete interactive multi-page portfolio for GitHub Pages.
 
-## Recommended repository name
+## Repository
+Use this exact repository name for a user site:
 
-`jagatjoshi.github.io`
+`Jagat-Joshi.github.io`
 
-## Upload / deploy
+Live URL:
 
-1. Create a public GitHub repository named `jagatjoshi.github.io`.
-2. Upload **all contents** of this folder to the repository root.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, choose:
+`https://jagat-joshi.github.io/`
+
+## Upload all at once
+1. Unzip this package.
+2. Open your `Jagat-Joshi.github.io` repository on GitHub.
+3. Use **Add file → Upload files**.
+4. Drag **all contents** of this folder into the repository:
+   - `index.html`
+   - `404.html`
+   - `assets/`
+   - `projects/`
+   - `README.md`
+5. Commit the changes.
+6. In **Settings → Pages**, use:
    - Source: Deploy from a branch
    - Branch: `main`
    - Folder: `/ (root)`
-5. Save.
 
-Your site will be available at:
+## Features
+- Interactive landing page
+- Dark/light theme toggle
+- Responsive mobile navigation
+- Scroll reveal animations
+- Project filtering
+- Eight project case-study pages
+- Sticky case-study navigation
+- Expandable project detail sections
+- 404 page
+- Responsive mobile layout
 
-`https://jagatjoshi.github.io`
+## Visuals
+Project pages intentionally contain a visual-gallery slot. Replace these with non-confidential visuals you own or are permitted to publish.
 
-## Important before publishing
+Recommended sources:
+- Your engineering portfolio screenshots/renders
+- Your own CAD exports
+- Your own prototype/test photos
+- Public company product imagery only when you have permission / appropriate attribution
 
-- Replace project image placeholders with your own non-confidential photos, CAD renders, plots, and diagrams.
-- Do not upload proprietary drawings, customer data, internal screenshots, dimensions, or confidential company information.
-- Add a PDF resume later if desired under `assets/files/` and link it from the homepage.
-
-## Structure
-
-- `index.html` — homepage
-- `projects/` — separate project case-study pages
-- `assets/css/styles.css` — site styling
-- `assets/js/main.js` — small script
-- `assets/images/` — put your images here
+Never publish proprietary drawings, internal dimensions, customer data, unreleased product details, or confidential company information.
