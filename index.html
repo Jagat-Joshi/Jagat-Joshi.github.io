@@ -1,26 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Jagat Raj Joshi — Mechanical, Electromechanical & Energy Systems Engineer. Product design, thermal systems, prototyping, testing, manufacturing, robotics and energy projects.">
+  <meta name="description" content="Jagat Raj Joshi — Mechanical, Electromechanical & Energy Systems Engineer. Product design, robotics hardware, thermal systems, manufacturing, testing and energy engineering.">
   <meta name="theme-color" content="#07111f">
   <title>Jagat Raj Joshi | Engineering Portfolio</title>
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-
 <a class="skip-link" href="#main">Skip to content</a>
+
 <nav class="nav">
   <div class="container nav-inner">
     <a class="brand" href="/"><span>J</span>agat Raj Joshi</a>
     <div class="nav-links">
-      <a href="/#projects">Projects</a>
-      <a href="/#experience">Experience</a>
-      <a href="/#skills">Skills</a>
-      <a href="/#research">Research</a>
-      <a href="/#contact">Contact</a>
+      <a href="#projects">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Capabilities</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
     </div>
     <div class="nav-actions">
       <button class="icon-btn" data-theme-toggle aria-label="Toggle color theme">☀</button>
@@ -30,50 +30,64 @@
 </nav>
 
 <main id="main">
-<section class="hero">
-  <div class="container hero-grid">
+
+<section class="hero visual-hero">
+  <div class="container hero-grid visual-hero-grid">
     <div class="hero-copy reveal">
-      <div class="eyebrow">Mechanical · Electromechanical · Energy Systems</div>
-      <h1>Hardware beyond the CAD screen.</h1>
-      <p class="lead">
-        I’m Jagat Raj Joshi, a mechanical and electromechanical engineer with an M.S. in Applied Energy and Electromechanical Engineering.
-        I work across design, analysis, fabrication, integration, testing, troubleshooting, and iteration.
+      <div class="eyebrow">Mechanical · Electromechanical · Energy</div>
+      <h1>I design hardware that has to work in the real world.</h1>
+      <p class="hero-short">
+        CAD, thermal systems, electronics packaging, prototyping, manufacturing and experimental validation.
       </p>
       <div class="cta-row">
-        <a class="btn primary" href="#projects">Explore projects</a>
-        <a class="btn ghost" href="mailto:jagat.raj.joshi@gmail.com">Contact me</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/jagat-joshi" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <a class="btn primary" href="#projects">See selected work ↓</a>
+        <a class="btn ghost" href="mailto:jagat.raj.joshi@gmail.com">Email me</a>
       </div>
-      <div class="status"><span class="status-dot"></span> Open to mechanical, electromechanical, thermal, product, test, robotics-hardware and energy roles</div>
+      <div class="mini-proof">
+        <span>SolidWorks</span><span>ANSYS</span><span>Fusion 360</span><span>Manufacturing</span><span>Testing</span>
+      </div>
     </div>
 
-    <aside class="hero-card reveal">
-      <div class="eyebrow">Engineering workflow</div>
-      <h2>Design → build → test → troubleshoot → improve.</h2>
-      <p class="lead">My strongest work connects mechanical design with electronics, thermal behavior, manufacturing, assembly and validation.</p>
-      <div class="flow">
-        <div class="flow-step"><strong>01</strong>Design</div>
-        <div class="flow-step"><strong>02</strong>Build</div>
-        <div class="flow-step"><strong>03</strong>Test</div>
-        <div class="flow-step"><strong>04</strong>Debug</div>
-        <div class="flow-step"><strong>05</strong>Improve</div>
-      </div>
-      <div class="stats">
-        <div class="stat"><strong>7+ yrs</strong><span>CAD / mechanical design exposure</span></div>
-        <div class="stat"><strong>Cross-functional</strong><span>RF · electrical · manufacturing</span></div>
-        <div class="stat"><strong>Hands-on</strong><span>Prototype & fabrication</span></div>
-        <div class="stat"><strong>Thermal + FEA</strong><span>Analysis-led iteration</span></div>
-      </div>
-    </aside>
+    <div class="hero-collage" data-parallax-root aria-label="Selected engineering work">
+      <a href="/projects/counter-drone-hardware.html" class="float-card fc-1" data-depth="14">
+        <img src="/assets/images/avgarde-system.webp" alt="Counter-drone electromechanical platform rendering">
+        <span>Electromechanical integration</span>
+      </a>
+      <a href="/projects/martian-rover.html" class="float-card fc-2" data-depth="22">
+        <img src="/assets/images/rover-field.webp" alt="Fabricated Martian terrain rover">
+        <span>Robotics · build · test</span>
+      </a>
+      <a href="/projects/protech-products.html" class="float-card fc-3" data-depth="10">
+        <img src="/assets/images/protech-ramp.webp" alt="Automotive service ramp CAD">
+        <span>Product design · DFM</span>
+      </a>
+      <a href="/projects/hybrid-energy.html" class="float-card fc-4" data-depth="18">
+        <img src="/assets/images/thesis-testbench.webp" alt="Hybrid energy harvesting experimental test bench">
+        <span>Energy systems · validation</span>
+      </a>
+      <div class="orbit orbit-a"></div>
+      <div class="orbit orbit-b"></div>
+    </div>
   </div>
 </section>
 
-<section class="section soft" id="projects">
+<div class="work-marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>DESIGN</span><i>→</i><span>BUILD</span><i>→</i><span>TEST</span><i>→</i><span>TROUBLESHOOT</span><i>→</i><span>IMPROVE</span><i>→</i>
+    <span>DESIGN</span><i>→</i><span>BUILD</span><i>→</i><span>TEST</span><i>→</i><span>TROUBLESHOOT</span><i>→</i><span>IMPROVE</span><i>→</i>
+  </div>
+</div>
+
+<section class="section visual-projects" id="projects">
   <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">Selected work</div><h2>Engineering case studies</h2></div>
-      <p>Filter by discipline, then open any project for the engineering problem, constraints, ownership, validation, and result.</p>
+    <div class="section-head compact-head">
+      <div>
+        <div class="eyebrow">Selected engineering work</div>
+        <h2>Built, tested, and iterated.</h2>
+      </div>
+      <p>Open a project for the engineering problem, constraints, ownership and result.</p>
     </div>
+
     <div class="filter-row">
       <button class="filter active" data-filter="all">All</button>
       <button class="filter" data-filter="mechanical">Mechanical</button>
@@ -81,162 +95,143 @@
       <button class="filter" data-filter="thermal">Thermal</button>
       <button class="filter" data-filter="robotics">Robotics</button>
       <button class="filter" data-filter="energy">Energy</button>
-      <button class="filter" data-filter="test">Testing</button>
     </div>
-    <div class="grid project-grid">
-      
-    <a class="project-card reveal" data-category="energy test" href="/projects/hybrid-energy.html">
-      <div class="project-visual">⚡</div>
-      <div class="num">01 · Master’s Thesis</div>
-      <h3>Hybrid Energy Harvesting Backup Power</h3>
-      <p>Battery-less, event-driven backup architecture harvesting thermal, vibration, and solar energy for reliable CAN communication.</p>
-      <div class="tag-row"><span class="tag">Energy Harvesting</span><span class="tag">CAN</span><span class="tag">Lab Testing</span></div>
-      <div class="more">Explore case study →</div>
-    </a>
-    <a class="project-card reveal" data-category="mechanical thermal hardware" href="/projects/counter-drone-hardware.html">
-      <div class="project-visual">◉</div>
-      <div class="num">02 · Avgarde Systems</div>
-      <h3>Counter-Drone Hardware Integration & Thermal Reliability</h3>
-      <p>Mechanical packaging, RF/electronics integration, thermal redesign, fabrication support, and prototype troubleshooting.</p>
-      <div class="tag-row"><span class="tag">SolidWorks</span><span class="tag">Thermal</span><span class="tag">RF Packaging</span></div>
-      <div class="more">Explore case study →</div>
-    </a>
-    <a class="project-card reveal" data-category="mechanical hardware test" href="/projects/utm-rack.html">
-      <div class="project-visual">▦</div>
-      <div class="num">03 · Avgarde Systems</div>
-      <h3>UTM / Automatic Test Equipment Rack</h3>
-      <p>System layout, detailed design, BOM-driven assembly, fabrication leadership, equipment integration, and fit-up resolution.</p>
-      <div class="tag-row"><span class="tag">Equipment Rack</span><span class="tag">BOM</span><span class="tag">Fabrication</span></div>
-      <div class="more">Explore case study →</div>
-    </a>
-    <a class="project-card reveal" data-category="mechanical robotics" href="/projects/martian-rover.html">
-      <div class="project-visual">⌁</div>
-      <div class="num">04 · Undergraduate Robotics Project</div>
-      <h3>Martian Terrain Rover — Design, Build & Validation</h3>
-      <p>Mechanical design, analysis, fabrication, assembly, integration, and rough-terrain validation of a working tele-operated rover.</p>
-      <div class="tag-row"><span class="tag">Robotics</span><span class="tag">ANSYS</span><span class="tag">Fabrication</span></div>
-      <div class="more">Explore case study →</div>
-    </a>
-    <a class="project-card reveal" data-category="mechanical manufacturing" href="/projects/protech-products.html">
-      <div class="project-visual">⚙</div>
-      <div class="num">05 · Protech Engineering</div>
-      <h3>Automotive Service Equipment</h3>
-      <p>Hydraulic and linear-actuator service equipment designed around real shop capabilities, fabrication, assembly, sourcing, and technician feedback.</p>
-      <div class="tag-row"><span class="tag">SolidWorks</span><span class="tag">Hydraulics</span><span class="tag">Sheet Metal</span></div>
-      <div class="more">Explore case study →</div>
-    </a>
-    <a class="project-card reveal" data-category="mechanical thermal hardware" href="/projects/virtusense-device.html">
-      <div class="project-visual">✚</div>
-      <div class="num">06 · VirtuSense Technologies</div>
-      <h3>Medical-Technology Rapid Prototyping & Thermal Design</h3>
-      <p>Fusion 360 enclosure and heat-sink design, 3D-printed prototypes, fit/function checks, and BOM development for electronic hardware.</p>
-      <div class="tag-row"><span class="tag">Fusion 360</span><span class="tag">Heat Sink</span><span class="tag">3D Printing</span></div>
-      <div class="more">Explore case study →</div>
-    </a>
-    <a class="project-card reveal" data-category="energy thermal" href="/projects/hvac-audit.html">
-      <div class="project-visual">⌂</div>
-      <div class="num">07 · Graduate Project</div>
-      <h3>Commercial HVAC & Facility Energy Audit</h3>
-      <p>Level-2-style audit of HVAC, ventilation, lighting, schedules, utility use, and controls-based conservation opportunities.</p>
-      <div class="tag-row"><span class="tag">HVAC</span><span class="tag">Energy Audit</span><span class="tag">Controls</span></div>
-      <div class="more">Explore case study →</div>
-    </a>
-    <a class="project-card reveal" data-category="energy thermal" href="/projects/geothermal-district.html">
-      <div class="project-visual">◌</div>
-      <div class="num">08 · Graduate Project</div>
-      <h3>Geothermal District Heating & Cooling Concept</h3>
-      <p>District heating/cooling concept for a school retrofit using river-source heat exchange, water-source heat pumps, DOAS, and hydronic distribution.</p>
-      <div class="tag-row"><span class="tag">Geothermal</span><span class="tag">Heat Pumps</span><span class="tag">Hydronics</span></div>
-      <div class="more">Explore case study →</div>
-    </a>
+
+    <div class="visual-work-grid">
+      <a class="image-project feature-project reveal" data-category="mechanical hardware thermal" href="/projects/counter-drone-hardware.html">
+        <img src="/assets/images/avgarde-system.webp" alt="Counter-drone electromechanical platform">
+        <div class="image-project-overlay">
+          <span class="project-kicker">Avgarde Systems</span>
+          <h3>Counter-Drone Hardware Integration</h3>
+          <p>RF/electronics packaging · thermal reliability · fabrication</p>
+          <b>View case study ↗</b>
+        </div>
+      </a>
+
+      <a class="image-project reveal" data-category="energy test" href="/projects/hybrid-energy.html">
+        <img src="/assets/images/thesis-testbench.webp" alt="Hybrid energy harvesting test setup">
+        <div class="image-project-overlay">
+          <span class="project-kicker">Master’s Thesis</span>
+          <h3>Hybrid Energy Harvesting</h3>
+          <p>TEG · solar · vibration · CAN</p>
+          <b>View project ↗</b>
+        </div>
+      </a>
+
+      <a class="image-project reveal" data-category="mechanical robotics" href="/projects/martian-rover.html">
+        <img src="/assets/images/rover-field.webp" alt="Fabricated terrain rover during field testing">
+        <div class="image-project-overlay">
+          <span class="project-kicker">Robotics</span>
+          <h3>Martian Terrain Rover</h3>
+          <p>CAD · fabrication · field validation</p>
+          <b>View project ↗</b>
+        </div>
+      </a>
+
+      <a class="image-project reveal" data-category="mechanical manufacturing" href="/projects/protech-products.html">
+        <img src="/assets/images/protech-ramp.webp" alt="Automotive service equipment CAD">
+        <div class="image-project-overlay">
+          <span class="project-kicker">Protech Engineering</span>
+          <h3>Automotive Service Equipment</h3>
+          <p>Hydraulics · DFM · shop-floor implementation</p>
+          <b>View project ↗</b>
+        </div>
+      </a>
+
+      <a class="image-project reveal" data-category="mechanical hardware test" href="/projects/utm-rack.html">
+        <img src="/assets/images/utm-rack.webp" alt="Automatic test equipment rack design">
+        <div class="image-project-overlay">
+          <span class="project-kicker">Avgarde Systems</span>
+          <h3>UTM / ATE Equipment Rack</h3>
+          <p>System layout · BOM · fabrication · assembly</p>
+          <b>View project ↗</b>
+        </div>
+      </a>
+
+      <a class="image-project reveal" data-category="mechanical hardware thermal" href="/projects/virtusense-device.html">
+        <img src="/assets/images/virtusense-device-1.webp" alt="Medical technology product concept">
+        <div class="image-project-overlay">
+          <span class="project-kicker">VirtuSense Technologies</span>
+          <h3>Medical-Tech Rapid Prototyping</h3>
+          <p>Fusion 360 · thermal design · 3D printing</p>
+          <b>View project ↗</b>
+        </div>
+      </a>
+    </div>
+
+    <div class="secondary-links reveal">
+      <a href="/projects/hvac-audit.html"><span>HVAC & Facility Energy Audit</span><b>Energy systems →</b></a>
+      <a href="/projects/geothermal-district.html"><span>Geothermal District Heating & Cooling</span><b>Thermal systems →</b></a>
     </div>
   </div>
 </section>
 
-<section class="section" id="experience">
-  <div class="container two-col">
-    <div class="reveal">
-      <div class="eyebrow">Experience</div>
-      <h2>Product, research, manufacturing & test.</h2>
-      <p class="lead">My path has deliberately crossed multiple hardware domains, but the workflow has stayed consistent: understand the system, design the hardware, build it, test it, and improve it.</p>
-      <div class="quote">“A mechanical engineer who is comfortable owning hardware beyond the CAD screen.”</div>
-    </div>
-    <div class="card reveal">
-      <div class="timeline">
-        <div class="timeline-item"><div class="meta">2024–2026 · UNC Charlotte</div><h3>Research Assistant</h3><p>Experimental fixtures, sensors, wiring, instrumentation, thermal/electric-field loading, data quality, repeatability, troubleshooting, plots, and technical documentation.</p></div>
-        <div class="timeline-item"><div class="meta">2025 · VirtuSense Technologies</div><h3>Engineering Intern</h3><p>Fusion 360 enclosure and heat-sink design, 3D-printed fit checks, BOM support, and medical-technology product integration.</p></div>
-        <div class="timeline-item"><div class="meta">2023–2024 · Avgarde Systems</div><h3>Senior Electromechanical Engineer</h3><p>Counter-drone mechanical integration, RF/electronics packaging, thermal redesign, UTM/ATE rack ownership, fabrication, assembly, and troubleshooting.</p></div>
-        <div class="timeline-item"><div class="meta">2021–2022 · Protech Engineering</div><h3>R&D / Design Engineer</h3><p>Hydraulic and automotive service equipment, SolidWorks, sheet metal, CNC, welding, powder coating, assembly, fit-up, and DFM-driven revisions.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section soft" id="skills">
+<section class="section soft" id="experience">
   <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">Capability map</div><h2>Tools grounded in real hardware work.</h2></div>
-      <p>Software is useful only when it supports a better engineering decision, a cleaner build, or a more reliable test.</p>
+    <div class="section-head compact-head">
+      <div><div class="eyebrow">Experience</div><h2>From CAD to real hardware.</h2></div>
+      <p>My work has consistently lived at the interface between mechanical design, electronics, manufacturing and testing.</p>
     </div>
-    <div class="grid skill-grid">
-      <div class="card reveal">
-        <h3>Mechanical CAD & product design</h3>
-        <div class="skill-line"><span>SolidWorks</span><span>Parts · assemblies · drawings · packaging</span></div>
-        <div class="skill-line"><span>CATIA V5</span><span>Mechanical / product concepts</span></div>
-        <div class="skill-line"><span>Fusion 360</span><span>Compact enclosure / medical-device hardware</span></div>
-        <div class="skill-line"><span>AutoCAD / Revit</span><span>Drawing & building-system exposure</span></div>
-      </div>
-      <div class="card reveal">
-        <h3>Analysis & validation</h3>
-        <div class="skill-line"><span>ANSYS</span><span>Structural / thermal analysis</span></div>
-        <div class="skill-line"><span>COMSOL</span><span>Multiphysics exposure</span></div>
-        <div class="skill-line"><span>MATLAB / Simulink</span><span>Energy & system calculations</span></div>
-        <div class="skill-line"><span>LabVIEW</span><span>Data acquisition & experimentation</span></div>
-      </div>
-      <div class="card reveal">
-        <h3>Manufacturing & prototyping</h3>
-        <div class="skill-line"><span>Sheet metal</span><span>Punching · bending · fabrication</span></div>
-        <div class="skill-line"><span>CNC / machining</span><span>Production-oriented design</span></div>
-        <div class="skill-line"><span>Welding / assembly</span><span>Hands-on integration</span></div>
-        <div class="skill-line"><span>3D printing</span><span>Fit/function verification</span></div>
-      </div>
-      <div class="card reveal">
-        <h3>Electromechanical & controls</h3>
-        <div class="skill-line"><span>CAN / Modbus</span><span>Communication & integration</span></div>
-        <div class="skill-line"><span>PLC / HMI</span><span>Automation laboratory exposure</span></div>
-        <div class="skill-line"><span>Python / C++</span><span>Engineering scripting / programming</span></div>
-        <div class="skill-line"><span>Sensors & instrumentation</span><span>Testing & troubleshooting</span></div>
-      </div>
+    <div class="experience-strip">
+      <article class="exp-card reveal"><span>2024–2026</span><h3>UNC Charlotte</h3><p>Research Assistant</p><small>Fixtures · instrumentation · thermal/electrical testing · data quality</small></article>
+      <article class="exp-card reveal"><span>2025</span><h3>VirtuSense</h3><p>Engineering Intern</p><small>Heat sinks · housings · 3D printing · BOM</small></article>
+      <article class="exp-card reveal"><span>2023–2024</span><h3>Avgarde</h3><p>Senior Electromechanical Engineer</p><small>Counter-drone systems · RF packaging · ATE · thermal redesign</small></article>
+      <article class="exp-card reveal"><span>2021–2022</span><h3>Protech</h3><p>R&D / Design Engineer</p><small>Service equipment · fluid power · fabrication · DFM</small></article>
     </div>
   </div>
 </section>
 
-<section class="section" id="research">
-  <div class="container two-col">
-    <div class="card reveal">
-      <div class="eyebrow">Publication</div>
-      <h3>Subcritical crack monitoring in rocks using combined electromagnetic and acoustic emission analysis</h3>
-      <p>Journal of Electrostatics, 2025.</p>
-      <p class="meta">DOI: 10.1016/j.elstat.2025.104180</p>
+<section class="section" id="skills">
+  <div class="container skill-visual-grid">
+    <div class="reveal">
+      <div class="eyebrow">Capability map</div>
+      <h2>What I work across.</h2>
+      <p class="lead">Mechanical design is the core. The value comes from connecting it to the rest of the system.</p>
     </div>
-    <div class="card reveal">
-      <div class="eyebrow">Education</div>
-      <h3>M.S. Applied Energy and Electromechanical Engineering</h3>
-      <p>University of North Carolina at Charlotte · Completed May 2026</p>
-      <h3 style="margin-top:22px">B.Tech Mechanical & Manufacturing Engineering</h3>
-      <p>Ramaiah University of Applied Sciences</p>
+    <div class="capability-cloud reveal">
+      <span class="cap cap-lg">SolidWorks</span>
+      <span class="cap">CATIA V5</span>
+      <span class="cap">Fusion 360</span>
+      <span class="cap cap-lg">Thermal</span>
+      <span class="cap">ANSYS</span>
+      <span class="cap">COMSOL</span>
+      <span class="cap cap-lg">Prototyping</span>
+      <span class="cap">Sheet Metal</span>
+      <span class="cap">CNC</span>
+      <span class="cap">3D Printing</span>
+      <span class="cap cap-lg">Testing</span>
+      <span class="cap">LabVIEW</span>
+      <span class="cap">CAN</span>
+      <span class="cap">Python</span>
     </div>
   </div>
 </section>
 
-<section class="section soft" id="contact">
+<section class="section soft" id="research">
+  <div class="container research-band reveal">
+    <div>
+      <div class="eyebrow">Research & education</div>
+      <h2>Applied energy + electromechanical systems.</h2>
+    </div>
+    <div class="research-copy">
+      <h3>Journal of Electrostatics · 2025</h3>
+      <p>Subcritical crack monitoring in rocks using combined electromagnetic and acoustic emission analysis.</p>
+      <small>DOI: 10.1016/j.elstat.2025.104180</small>
+    </div>
+    <div class="research-copy">
+      <h3>M.S. · UNC Charlotte</h3>
+      <p>Applied Energy and Electromechanical Engineering · May 2026</p>
+      <small>B.Tech Mechanical & Manufacturing Engineering</small>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-visual" id="contact">
   <div class="container reveal">
-    <div class="eyebrow">Contact</div>
-    <h2>Interested in building useful hardware?</h2>
-    <p class="lead">I’m interested in mechanical design, electromechanical systems, product development, robotics hardware, thermal systems, testing/validation, manufacturing, and energy technology.</p>
+    <div class="eyebrow">Let’s connect</div>
+    <h2>Looking for an engineer who can move between design, hardware and validation?</h2>
     <div class="cta-row">
-      <a class="btn primary" href="mailto:jagat.raj.joshi@gmail.com">Email me</a>
-      <a class="btn" href="tel:+17047437561">+1 704-743-7561</a>
+      <a class="btn primary" href="mailto:jagat.raj.joshi@gmail.com">jagat.raj.joshi@gmail.com</a>
       <a class="btn" href="https://www.linkedin.com/in/jagat-joshi" target="_blank" rel="noreferrer">LinkedIn ↗</a>
     </div>
   </div>
@@ -245,11 +240,11 @@
 
 <footer class="footer">
   <div class="container footer-row">
-    <div>Jagat Raj Joshi · Mechanical & Electromechanical Engineer</div>
-    <div>© <span id="year"></span> · Charlotte, NC</div>
+    <div>Jagat Raj Joshi · Charlotte, NC</div>
+    <div>© <span id="year"></span></div>
   </div>
 </footer>
-<script src="/assets/js/main.js"></script>
 
+<script src="/assets/js/main.js"></script>
 </body>
 </html>

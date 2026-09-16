@@ -49,3 +49,17 @@ Recommended sources:
 - Public company product imagery only when you have permission / appropriate attribution
 
 Never publish proprietary drawings, internal dimensions, customer data, unreleased product details, or confidential company information.
+
+
+## Visual-first v2
+This version adds:
+- Engineering image collage in the landing hero
+- Floating/parallax motion
+- Continuous design-build-test marquee
+- Image-led project grid
+- Real portfolio visuals embedded into major project case studies
+- Hover zoom and motion
+- Reduced homepage text density
+- Responsive mobile treatment
+
+All embedded project visuals came from the existing non-confidential engineering portfolio/source files already supplied for the site.

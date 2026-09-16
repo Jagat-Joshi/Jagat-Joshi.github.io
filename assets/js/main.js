@@ -46,4 +46,19 @@
 
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
+
+  const parallax = document.querySelector('[data-parallax-root]');
+  if (parallax && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const cards = parallax.querySelectorAll('[data-depth]');
+    parallax.addEventListener('pointermove', (e) => {
+      const r = parallax.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - .5;
+      const y = (e.clientY - r.top) / r.height - .5;
+      cards.forEach(card => {
+        const d = Number(card.dataset.depth || 10);
+        card.style.translate = `${x*d}px ${y*d}px`;
+      });
+    });
+    parallax.addEventListener('pointerleave', () => cards.forEach(c => c.style.translate = '0 0'));
+  }
 })();
